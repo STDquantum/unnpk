@@ -692,6 +692,7 @@ document.addEventListener('click', function(){_countAA-=10;doBBBd()}, false)
 <p>遇到这种情况，差不多只能重新开始了，所以最好还是直接使用之前交叉编译的程序。</p>
 <p>现在为了更快的拿到所有 opcode 的映射关系，我直接写了一份使用了所有 <code>Python 2.7 opcode</code> 的文件：
 <a href="https://gist.github.com/fate0/3e1d23bce9d4d2cfa93848dd92aba3d4" target="_blank" rel="external">py27opcode.py</a></p>
+<p>或本地版 <a href="./阴阳师：一个非酋的逆向旅程_files/pymarshal.py" target="_blank" rel="external">py27opcode.py</a></p>
 <p>因为 <code>from __future__ import division</code> 会影响 <code>division</code>，
 要么一个文件的 divide 全是 true divide，要么全是正常的 divide，不能共存。</p>
 <p>所以要使用阴阳师的 Python dump 两份 pyc，普通 Python dump 两份 pyc。</p>
